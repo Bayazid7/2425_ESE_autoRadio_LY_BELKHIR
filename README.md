@@ -132,16 +132,12 @@ V_{out}(t) + RC \frac{dV_{out}(t)}{dt} = V_{in}(t)
 $$
 
 2. **Équation de récurrence :**
-3. 
-      $$
-   
-      V_{out}[n] + RC \cdot f_s \cdot (V_{out}[n] - V_{out}[n-1]) = V_{in}[n]
-   
-      $$
-
-      $$
-      V_{out}[n] \cdot (1 + RC \cdot f_s) = V_{in}[n] + RC \cdot f_s \cdot V_{out}[n-1]
-      $$
+$$
+V_{out}[n] + RC \cdot f_s \cdot (V_{out}[n] - V_{out}[n-1]) = V_{in}[n]
+$$
+$$
+V_{out}[n] \cdot (1 + RC \cdot f_s) = V_{in}[n] + RC \cdot f_s \cdot V_{out}[n-1]
+$$
 
 5. **Coefficient calculés (A, B, D) :**
     $$
