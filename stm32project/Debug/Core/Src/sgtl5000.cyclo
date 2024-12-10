@@ -1,0 +1,4 @@
+../Core/Src/sgtl5000.c:5:16:writeRegister	2
+../Core/Src/sgtl5000.c:17:16:readRegister	2
+../Core/Src/sgtl5000.c:29:6:modify	1
+../Core/Src/sgtl5000.c:38:6:sgtl5000_Init	1

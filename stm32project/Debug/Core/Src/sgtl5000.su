@@ -1,0 +1,4 @@
+../Core/Src/sgtl5000.c:5:16:writeRegister	40	static
+../Core/Src/sgtl5000.c:17:16:readRegister	40	static
+../Core/Src/sgtl5000.c:29:6:modify	24	static
+../Core/Src/sgtl5000.c:38:6:sgtl5000_Init	8	static

@@ -1,0 +1,6 @@
+../Core/Src/shell.c:22:12:sh_help	48	static
+../Core/Src/shell.c:33:6:shell_init	24	static
+../Core/Src/shell.c:48:5:shell_add	24	static
+../Core/Src/shell.c:60:12:shell_exec	72	static
+../Core/Src/shell.c:94:5:shell_run	32	static
+../Core/Src/shell.c:142:6:HAL_UART_RxCpltCallback	24	static,ignoring_inline_asm

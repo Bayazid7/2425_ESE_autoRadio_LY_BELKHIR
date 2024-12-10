@@ -1,0 +1,5 @@
+../Core/Src/IOExpander.c:6:9:IOExpanderWrite	2
+../Core/Src/IOExpander.c:22:16:IOExpanderRead	3
+../Core/Src/IOExpander.c:42:9:IOExpanderInit	3
+../Core/Src/IOExpander.c:61:9:IOExpanderGPIO_WritePin	3
+../Core/Src/IOExpander.c:77:9:IOExpanderGPIO_TogglePin	3
