@@ -1,5 +1,6 @@
+# 2425_ESE_autoRadio_LY_BELKHIR
 # Compte-Rendu : TP de Synthèse – Autoradio
-
+# Le code se trouve sur la branche master
 ## 1. Démarrage
 1. **Création du projet :**
  
@@ -131,19 +132,30 @@ V_{out}(t) + RC \frac{dV_{out}(t)}{dt} = V_{in}(t)
 $$
 
 2. **Équation de récurrence :**
-      $$
-      V_{out}[n] + RC \cdot f_s \cdot (V_{out}[n] - V_{out}[n-1]) = V_{in}[n]
-      $$
 
-      $$
-      V_{out}[n] \cdot (1 + RC \cdot f_s) = V_{in}[n] + RC \cdot f_s \cdot V_{out}[n-1]
-      $$
+$$
+V_{out}[n] + RC \cdot f_s \cdot (V_{out}[n] - V_{out}[n-1]) = V_{in}[n]
+$$
 
-3. **Coefficient calculés (A, B, D) :**
-   - $$ A = 1$$
-   - $$  B = RC \cdot f_s $$ 
-   - $$  D = \frac{1}{1 + RC \cdot f_s}  $$ 
-4. **Structure `h_RC_filter_t`:**
+$$
+V_{out}[n] \cdot (1 + RC \cdot f_s) = V_{in}[n] + RC \cdot f_s \cdot V_{out}[n-1]
+$$
+
+5. **Coefficient calculés (A, B, D) :**
+   
+$$
+A = 1
+$$
+
+$$ 
+B = RC \cdot f_s 
+$$
+
+$$ 
+D = \frac{1}{1 + RC \cdot f_s} 
+$$ 
+
+7. **Structure `h_RC_filter_t`:**
    ```c
    typedef struct {
        uint32_t coeff_A;
@@ -151,3 +163,4 @@ $$
        uint32_t coeff_D;
        uint16_t out_prev;
    } h_RC_filter_t;
+
